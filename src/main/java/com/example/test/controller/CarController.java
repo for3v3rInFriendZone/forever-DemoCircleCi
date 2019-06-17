@@ -45,7 +45,7 @@ public class CarController {
             throw new DataNotValidException(errorsMessages.toString());
         }
 
-        String[] splittedName = newCar.getOwner().split(" ");
+        String[] splittedName = newCar.getOwner();
         String firstName = splittedName[0];
         String lastName = splittedName[1];
         User newUser = new User(firstName, lastName);

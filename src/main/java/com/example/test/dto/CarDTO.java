@@ -23,4 +23,8 @@ public class CarDTO implements Serializable {
 
     @NotBlank
     private String owner;
+
+    public String[] getOwner() {
+        return owner.split(" ");
+    }
 }
